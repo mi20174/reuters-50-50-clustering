@@ -1,1 +1,7 @@
+models/*
+
+!models/.gitkeep
+
+*.pkl
 *.plk
+*.pickle
