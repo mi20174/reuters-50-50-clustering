@@ -44,11 +44,11 @@ Reuters50_Project/
 ├── notebooks/                # Jupyter notebook
 │   └── Reuter_50_50_Klasterovanje.ipynb
 │
-├── results/                  # Rezultati
+├── results/                  # Rezultati i grafikoni
 │   ├── *.png
 │
 ├── report/                   # Seminarski rad
-│   └── izvestaj.pdf
+│   └── report.pdf
 │
 └── README.md
 └── requirements.txt
