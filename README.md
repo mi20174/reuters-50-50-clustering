@@ -16,14 +16,14 @@ Cilj projekta je analiza tekstualnih podataka i primena **klasterovanja** kako b
 
 Projekat uključuje:
 
-- Učitavanje i pripremu tekstualnih podataka  
-- Preprocesiranje teksta  
-- Transformaciju teksta u numerički oblik (**TF-IDF**)  
-- Redukciju dimenzionalnosti (**PCA**)  
-- 2D i 3D vizualizaciju dokumenata  
-- Implementaciju algoritama klasterovanja  
-- Evaluaciju kvaliteta klastera  
-- Analizu i interpretaciju rezultata  
+- ✅ Učitavanje i pripremu tekstualnih podataka  
+- ✅ Preprocesiranje teksta  
+- ✅ Transformaciju teksta u numerički oblik (**TF-IDF**)  
+- ✅ Redukciju dimenzionalnosti (**PCA**)  
+- ✅ 2D i 3D vizualizaciju dokumenata  
+- ✅ Implementaciju algoritama klasterovanja  
+- ✅ Evaluaciju kvaliteta klastera  
+- ✅ Analizu i interpretaciju rezultata  
 
 ---
 
@@ -33,13 +33,13 @@ Projekat uključuje:
 Reuters50_Project/
 
 ├── data/                     # Podaci
-│   └── reuters50└──C50train     # Originalni dataset
+│   └── reuters50└──C50train  # Originalni dataset
 │                └──C50test
 ├── models/                   # Sačuvani modeli
 │   ├── tfidf_vectorizer.pkl
-│   ├── pca_reducer.pkl
-│   ├── svd_reducer.pkl
-│   └── clustering_models.pkl
+│   ├── min_max_scaler.pkl
+│   ├── .pkl
+│   
 │
 ├── notebooks/                # Jupyter notebook
 │   └── Reuter_50_50_Klasterovanje.ipynb
@@ -110,14 +110,14 @@ with zipfile.ZipFile("reuters50.zip", "r") as zip_ref:
 
 ### 3. Pokretanje analize
 
-Pokreni Jupyter Notebook:
+Pokrenuti Jupyter Notebook:
 
 ```bash
 cd Reuters50_Project/notebooks
 jupyter notebook reuters50_analysis.ipynb
 ```
 
-Zatim pokreni sve ćelije:
+Zatim pokrenuti sve ćelije:
 
 ```
 Cell → Run All
@@ -192,7 +192,7 @@ Rezultati se prikazuju kroz grafike i tabele:
 14_com_all.png
 ```
 
-Svi grafikoni se čuvaju u folderu:
+Svi grafikoni i tabele se čuvaju u folderu:
 
 ```
 results/
@@ -210,30 +210,38 @@ Meri koliko je dokument sličan svom klasteru.
 **Homogenost**  
 Ova mera proverava da li svaki klaster sadrži samo članove koji pripadaju jednoj istoj klasi
 
+**SSE**  
+Srednje kvadratna greska
+
+
 **Kompletnost**  
 Ova mera proverava da li su svi članovi jedne klase (autora) dodeljeni istom klasteru.
 
-**SSE**  
-Srednje kvadratna greska.
 ---
 
 ## 📈 Rezultati
 
 Analiza uključuje:
 
-- poređenje algoritama klasterovanja  
-- određivanje optimalnog broja klastera  
-- 2D i 3D vizualizaciju klastera  
-- analizu ključnih reči u klasterima  
-- analizu dobijenih rezultata
+- ✅ poređenje algoritama klasterovanja
+- ✅ poredjenje algoritama sa i bez redukcije atributa
+- ✅ 2D i 3D vizualizaciju klastera    
+- ✅ detaljnu analizu dobijenih rezultata na osnovu metrike kvaliteta
 
-Rezultati se čuvaju u:
+Rezultati se nalaze u:
 
 ```
 results/
 ```
 
 ---
+
+
+Modeli se čuvaju u:
+
+```
+models/
+```
 
 ## 📚 Reference
 
